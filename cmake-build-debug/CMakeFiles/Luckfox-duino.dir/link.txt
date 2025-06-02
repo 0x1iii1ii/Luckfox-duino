@@ -1,0 +1,1 @@
+/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ -g CMakeFiles/Luckfox-duino.dir/src/main.cpp.o -o Luckfox-duino 
