@@ -2,7 +2,7 @@
 set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_SYSTEM_PROCESSOR arm)
 # compiler tools
-set(tools_rockchip830 "/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin" CACHE PATH "Cmake install prefix")
+set(tools_rockchip830 "/home/li/arm-rockchip830-linux-uclibcgnueabihf/bin" CACHE PATH "Cmake install prefix")
 # set(tools_rockchip830 "/opt/arm-rockchip830-linux-uclibcgnueabihf/bin" CACHE PATH "Cmake install prefix")
 set(MY_CROSS_prefix "/arm-rockchip830-linux-uclibcgnueabihf-")
 set(CMAKE_C_COMPILER ${tools_rockchip830}/${MY_CROSS_prefix}gcc)

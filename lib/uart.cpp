@@ -36,7 +36,6 @@ void UART::startReading () {
                 if (!response.empty()) {
                     std::lock_guard<std::mutex> lock(mutex_);
                     onDataReceived_(response);
-                    std::cout << "\nReceived: " << response << std::endl;
                 }
                 std::this_thread::sleep_for(std::chrono::milliseconds(100));
             }
