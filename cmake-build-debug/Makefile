@@ -129,6 +129,54 @@ Luckfox-duino/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/build
 .PHONY : Luckfox-duino/fast
 
+lib/gpio.o: lib/gpio.cpp.o
+.PHONY : lib/gpio.o
+
+# target to build an object file
+lib/gpio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o
+.PHONY : lib/gpio.cpp.o
+
+lib/gpio.i: lib/gpio.cpp.i
+.PHONY : lib/gpio.i
+
+# target to preprocess a source file
+lib/gpio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.i
+.PHONY : lib/gpio.cpp.i
+
+lib/gpio.s: lib/gpio.cpp.s
+.PHONY : lib/gpio.s
+
+# target to generate assembly for a file
+lib/gpio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.s
+.PHONY : lib/gpio.cpp.s
+
+lib/uart.o: lib/uart.cpp.o
+.PHONY : lib/uart.o
+
+# target to build an object file
+lib/uart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o
+.PHONY : lib/uart.cpp.o
+
+lib/uart.i: lib/uart.cpp.i
+.PHONY : lib/uart.i
+
+# target to preprocess a source file
+lib/uart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.i
+.PHONY : lib/uart.cpp.i
+
+lib/uart.s: lib/uart.cpp.s
+.PHONY : lib/uart.s
+
+# target to generate assembly for a file
+lib/uart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.s
+.PHONY : lib/uart.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Luckfox-duino"
+	@echo "... lib/gpio.o"
+	@echo "... lib/gpio.i"
+	@echo "... lib/gpio.s"
+	@echo "... lib/uart.o"
+	@echo "... lib/uart.i"
+	@echo "... lib/uart.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

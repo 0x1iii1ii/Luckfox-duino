@@ -69,10 +69,38 @@ include CMakeFiles/Luckfox-duino.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Luckfox-duino.dir/flags.make
 
+CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o: CMakeFiles/Luckfox-duino.dir/flags.make
+CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o: ../lib/gpio.cpp
+CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o: CMakeFiles/Luckfox-duino.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Lii/Luckfox-duino/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o"
+	/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o -MF CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o.d -o CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o -c /mnt/d/Lii/Luckfox-duino/lib/gpio.cpp
+
+CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.i"
+	/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Lii/Luckfox-duino/lib/gpio.cpp > CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.i
+
+CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.s"
+	/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Lii/Luckfox-duino/lib/gpio.cpp -o CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.s
+
+CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o: CMakeFiles/Luckfox-duino.dir/flags.make
+CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o: ../lib/uart.cpp
+CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o: CMakeFiles/Luckfox-duino.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Lii/Luckfox-duino/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o"
+	/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o -MF CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o.d -o CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o -c /mnt/d/Lii/Luckfox-duino/lib/uart.cpp
+
+CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.i"
+	/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/Lii/Luckfox-duino/lib/uart.cpp > CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.i
+
+CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.s"
+	/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/Lii/Luckfox-duino/lib/uart.cpp -o CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.s
+
 CMakeFiles/Luckfox-duino.dir/src/main.cpp.o: CMakeFiles/Luckfox-duino.dir/flags.make
 CMakeFiles/Luckfox-duino.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Luckfox-duino.dir/src/main.cpp.o: CMakeFiles/Luckfox-duino.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Lii/Luckfox-duino/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Luckfox-duino.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Lii/Luckfox-duino/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Luckfox-duino.dir/src/main.cpp.o"
 	/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Luckfox-duino.dir/src/main.cpp.o -MF CMakeFiles/Luckfox-duino.dir/src/main.cpp.o.d -o CMakeFiles/Luckfox-duino.dir/src/main.cpp.o -c /mnt/d/Lii/Luckfox-duino/src/main.cpp
 
 CMakeFiles/Luckfox-duino.dir/src/main.cpp.i: cmake_force
@@ -85,15 +113,19 @@ CMakeFiles/Luckfox-duino.dir/src/main.cpp.s: cmake_force
 
 # Object files for target Luckfox-duino
 Luckfox__duino_OBJECTS = \
+"CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o" \
+"CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o" \
 "CMakeFiles/Luckfox-duino.dir/src/main.cpp.o"
 
 # External object files for target Luckfox-duino
 Luckfox__duino_EXTERNAL_OBJECTS =
 
+Luckfox-duino: CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o
+Luckfox-duino: CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o
 Luckfox-duino: CMakeFiles/Luckfox-duino.dir/src/main.cpp.o
 Luckfox-duino: CMakeFiles/Luckfox-duino.dir/build.make
 Luckfox-duino: CMakeFiles/Luckfox-duino.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Lii/Luckfox-duino/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Luckfox-duino"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Lii/Luckfox-duino/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Luckfox-duino"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Luckfox-duino.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy /mnt/d/Lii/Luckfox-duino/cmake-build-debug/Luckfox-duino /mnt/d/Lii/Luckfox-duino/output
 

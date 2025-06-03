@@ -7,7 +7,9 @@
 
 #include <chrono>
 #include <fstream>
+#include <cstdlib>
 #include <thread>
+#include "gpio_def.h"
 
 #define HIGH 1
 #define LOW  0
@@ -31,10 +33,8 @@ public:
     ~GPIO(void);
     // pinMode: Set the pin as INPUT or OUTPUT
     bool pinMode(const char* mode);
-
     // digitalWrite: Write HIGH (1) or LOW (0) to the pin
     bool digitalWrite(int value);
-
     // digitalRead: Read the current value of the pin (0 or 1)
     int digitalRead();
     bool waitForValue(int targetValue, std::chrono::milliseconds timeout);
