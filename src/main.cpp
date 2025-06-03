@@ -1,26 +1,29 @@
 #include <iostream>
 #include "gpio.h"
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+#include "pwm.h"
+
 #define LED_USER_PIN GPIO1_A2 //34
 #define BOOT_BUTTON_PIN GPIO4_C0 //144
+#define PWM_RES 2
 GPIO LED(LED_USER_PIN);
 GPIO BTN_BOOT(BOOT_BUTTON_PIN);
 bool state = false;
-
+PWM pwmLED(PWM0_M0);
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
+
     std::cout << "Hello and welcome to LED Blink example" << "!\n";
     std::cout << "LED pin " << LED_USER_PIN << std::endl;
     std::cout << "BUTTON pin " << BOOT_BUTTON_PIN << std::endl;
     LED.pinMode(OUTPUT); // set as output
     BTN_BOOT.pinMode(INPUT); // set as input
+    pwmLED.begin();
     std::chrono::steady_clock::time_point lastToggleTime = std::chrono::steady_clock::now();
-    auto loopc = 0;
-    while (loopc < 20)
+    int direction = PWM_RES; // 1 for increasing duty cycle, -1 for decreasing
+    int value  = 0;
+
+    while (1)
     {
-        std::this_thread::sleep_for(std::chrono::milliseconds(50)); // debounce delay
+        std::this_thread::sleep_for(std::chrono::milliseconds(10)); // debounce delay
 
         //* Toggle 1 */
 
@@ -39,13 +42,13 @@ int main() {
 
         //* Toggle 2 */
 
-        static bool lastState = HIGH;
-        if (BTN_BOOT.digitalRead() == LOW && lastState == HIGH) {
-            LED.digitalWrite(!LED.digitalRead());
-            loopc++;
-            std::cout << "LED is " << (LED.digitalRead() ? "on" : "off") << std::endl;
-        }
-        lastState = BTN_BOOT.digitalRead();
+        // static bool lastState = HIGH;
+        // if (BTN_BOOT.digitalRead() == LOW && lastState == HIGH) {
+        //     LED.digitalWrite(!LED.digitalRead());
+        //     loopc++;
+        //     std::cout << "LED is " << (LED.digitalRead() ? "on" : "off") << std::endl;
+        // }
+        // lastState = BTN_BOOT.digitalRead();
 
         //* Blink */
 
@@ -57,11 +60,22 @@ int main() {
         //     std::cout << "LED is " << (LED.digitalRead() ? "on" : "off") << std::endl;
         //     lastToggleTime = now;
         // }
+
+        //* PWM */
+
+        // Change PWM duty (0..255)
+        value += direction;
+        if (value >= 255) {
+            value = 255;
+            direction = -PWM_RES;
+        }
+        else if (value <= 0) {
+            value = 0;
+            direction = +PWM_RES;
+        }
+        // Write the 8-bit “analog” value
+        pwmLED.analogWrite8bit(value);
+        std::cout << "pwm value: " << value << "\n";
     }
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.

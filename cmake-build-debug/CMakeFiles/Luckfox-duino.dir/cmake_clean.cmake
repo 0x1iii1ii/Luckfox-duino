@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o"
   "CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o.d"
+  "CMakeFiles/Luckfox-duino.dir/lib/pwm.cpp.o"
+  "CMakeFiles/Luckfox-duino.dir/lib/pwm.cpp.o.d"
   "CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o"
   "CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o.d"
   "CMakeFiles/Luckfox-duino.dir/src/main.cpp.o"

@@ -153,6 +153,30 @@ lib/gpio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.s
 .PHONY : lib/gpio.cpp.s
 
+lib/pwm.o: lib/pwm.cpp.o
+.PHONY : lib/pwm.o
+
+# target to build an object file
+lib/pwm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/pwm.cpp.o
+.PHONY : lib/pwm.cpp.o
+
+lib/pwm.i: lib/pwm.cpp.i
+.PHONY : lib/pwm.i
+
+# target to preprocess a source file
+lib/pwm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/pwm.cpp.i
+.PHONY : lib/pwm.cpp.i
+
+lib/pwm.s: lib/pwm.cpp.s
+.PHONY : lib/pwm.s
+
+# target to generate assembly for a file
+lib/pwm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Luckfox-duino.dir/build.make CMakeFiles/Luckfox-duino.dir/lib/pwm.cpp.s
+.PHONY : lib/pwm.cpp.s
+
 lib/uart.o: lib/uart.cpp.o
 .PHONY : lib/uart.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... lib/gpio.o"
 	@echo "... lib/gpio.i"
 	@echo "... lib/gpio.s"
+	@echo "... lib/pwm.o"
+	@echo "... lib/pwm.i"
+	@echo "... lib/pwm.s"
 	@echo "... lib/uart.o"
 	@echo "... lib/uart.i"
 	@echo "... lib/uart.s"

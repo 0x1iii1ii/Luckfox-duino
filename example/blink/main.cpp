@@ -1,7 +1,6 @@
 #include <iostream>
 #include "gpio.h"
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 #define LED_USER_PIN GPIO1_A2 //34
 #define BOOT_BUTTON_PIN GPIO4_C0 //144
 GPIO LED(LED_USER_PIN);
@@ -9,8 +8,6 @@ GPIO BTN_BOOT(BOOT_BUTTON_PIN);
 bool state = false;
 
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
     std::cout << "Hello and welcome to LED Blink example" << "!\n";
     std::cout << "LED pin " << LED_USER_PIN << std::endl;
     std::cout << "BUTTON pin " << BOOT_BUTTON_PIN << std::endl;
@@ -60,8 +57,3 @@ int main() {
     }
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.

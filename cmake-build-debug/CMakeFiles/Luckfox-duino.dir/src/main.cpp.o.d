@@ -172,4 +172,8 @@ CMakeFiles/Luckfox-duino.dir/src/main.cpp.o: \
  /home/seng/arm-rockchip830-linux-uclibcgnueabihf/arm-rockchip830-linux-uclibcgnueabihf/include/c++/8.3.0/bits/atomic_base.h \
  /home/seng/arm-rockchip830-linux-uclibcgnueabihf/arm-rockchip830-linux-uclibcgnueabihf/include/c++/8.3.0/bits/atomic_lockfree_defines.h \
  /home/seng/arm-rockchip830-linux-uclibcgnueabihf/arm-rockchip830-linux-uclibcgnueabihf/include/c++/8.3.0/backward/auto_ptr.h \
- /mnt/d/Lii/Luckfox-duino/include/gpio_def.h
+ /mnt/d/Lii/Luckfox-duino/include/gpio_def.h \
+ /mnt/d/Lii/Luckfox-duino/lib/pwm.h \
+ /home/seng/arm-rockchip830-linux-uclibcgnueabihf/arm-rockchip830-linux-uclibcgnueabihf/include/c++/8.3.0/cstring \
+ /home/seng/arm-rockchip830-linux-uclibcgnueabihf/arm-rockchip830-linux-uclibcgnueabihf/sysroot/usr/include/string.h \
+ /mnt/d/Lii/Luckfox-duino/include/pwm_def.h
