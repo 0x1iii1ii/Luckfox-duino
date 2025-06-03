@@ -1,1 +1,0 @@
-/home/seng/arm-rockchip830-linux-uclibcgnueabihf/bin//arm-rockchip830-linux-uclibcgnueabihf-g++ -g CMakeFiles/Luckfox-duino.dir/lib/gpio.cpp.o CMakeFiles/Luckfox-duino.dir/lib/pwm.cpp.o CMakeFiles/Luckfox-duino.dir/lib/uart.cpp.o CMakeFiles/Luckfox-duino.dir/src/main.cpp.o -o Luckfox-duino 

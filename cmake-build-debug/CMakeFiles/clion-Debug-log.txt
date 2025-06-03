@@ -1,4 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /mnt/d/Lii/Luckfox-duino -B /mnt/d/Lii/Luckfox-duino/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/d/Lii/Luckfox-duino/cmake-build-debug
