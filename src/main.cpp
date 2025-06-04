@@ -6,13 +6,15 @@
 
 #define LED_USER_PIN GPIO1_A2 //34
 #define BOOT_BUTTON_PIN GPIO4_C0 //144
-#define PWM_RES 10
+#define PWM_RES 1
+
 GPIO LED(LED_USER_PIN);
 GPIO BTN_BOOT(BOOT_BUTTON_PIN);
-bool state = false;
 PWM pwmLED(PWM0_M0);
 UART testSerial("/dev/ttyS3", B115200);
 ADC adc;
+
+bool state = false;
 
 void serialRead(const std::string &rawdata)
 {
@@ -42,26 +44,32 @@ int main() {
     std::string userInput;
     while (1)
     {
-        std::this_thread::sleep_for(std::chrono::milliseconds(100)); // debounce delay
-        float scale = adc.readScale();
-        if (scale < 0) {
-            std::cerr << "Failed to read scale\n";
-            return 1;
-        }
-        int raw0     = adc.readRaw(ADC::CH0);
-        int raw1     = adc.readRaw(ADC::CH1);
-        float volt0  = adc.readVoltage(ADC::CH0);
-        float volt1  = adc.readVoltage(ADC::CH1);
+        std::this_thread::sleep_for(std::chrono::milliseconds(10)); // debounce delay
+        //* ADC */
 
-        std::cout << "Scale (mV):     " << scale << "\n";
-        std::cout << "CH0 raw:        " << raw0 << ", voltage: " << volt0 << " V\n";
-        std::cout << "CH1 raw:        " << raw1 << ", voltage: " << volt1 << " V\n";
+        // float scale = adc.readScale();
+        // if (scale < 0) {
+        //     std::cerr << "Failed to read scale\n";
+        //     return 1;
+        // }
+        // int raw0     = adc.readRaw(ADC::CH0);
+        // int raw1     = adc.readRaw(ADC::CH1);
+        // float volt0  = adc.readVoltage(ADC::CH0);
+        // float volt1  = adc.readVoltage(ADC::CH1);
+        //
+        // std::cout << "Scale (mV):     " << scale << "\n";
+        // std::cout << "CH0 raw:        " << raw0 << ", voltage: " << volt0 << " V\n";
+        // std::cout << "CH1 raw:        " << raw1 << ", voltage: " << volt1 << " V\n";
+
+        //* Serial */
+
         // std::cout << "Enter message (type 'q' to quit): ";
         // std::getline(std::cin, userInput);
         // if (userInput == "q") {
         //     break;
         // }
         // testSerial.writeSerial(userInput + "\r\n");
+
         //* Toggle 1 */
 
         // static bool toggle = false;
